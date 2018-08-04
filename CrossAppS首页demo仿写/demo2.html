@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=0, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Document</title>	
+	<link rel="stylesheet" type="text/css" href="demo2.css">
+
+</head>
+<body>
+	<div class="pagebg navs">
+		<div class="mcontent">
+			<div class="toplogo">
+				<a></a>
+			</div>
+			<ul class="topnavul">
+				<li><a class="cur" href="javascript:;">首页</a></li>
+				<li><a href="javascript:;">下载</a></li>
+				<li><a href="javascript:;">文档</a></li>
+				<li><a href="javascript:;">技术支持</a></li>				
+				<li><a href="javascript:;">官方论坛</a></li>
+			</ul>
+			<div class="mobilemenu">
+				<a class="menutips"></a>
+				<ul class="menulist">
+					<li><a class="cur" href="http://www.baidu.com">首页</a></li>
+					<li><a href="http://www.baidu.com">下载</a></li>
+					<li><a href="http://www.baidu.com">文档</a></li>
+					<li><a href="http://www.baidu.com">技术支持</a></li>
+					<li><a href="http://www.baidu.com">官方论坛</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	<div class="pagebg pagetxt t1 clr">
+		<div class="mcontent">
+			<div class="txts">
+	            <h2>欢迎使用CrossApp</h2>
+	            <p>CrossApp是由9秒团队开发的一款免费、开源的跨平台开发移动应用的解决方案。</p>
+	            <a class="txtlink" href="javascript:;" title="点击下载">点击下载</a>
+	        </div>
+		</div>
+	</div>
+	<div class="pagebg clr">
+		<div class="mcontent">
+			<ul class="col-3">
+				<li>
+					<a href="javascript:;">
+						<img src="images/idxtip1.png">
+						<span class="tiptit">CrossApp是什么？</span>
+						<p>CrossApp是一款完全开源、免费、跨平台的移动应用开发引擎，基于最宽松的MIT开源协议，开发者根据自身情况使用CrossApp开发任何商业项目。</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="images/idxtip2.png">
+						<span class="tiptit">app开发为何要用CrossApp引擎</span>
+						<p>CrossApp的平台无关性，使得相对传统的iOS和Android原生应用开发，CrossApp更能节省开发的周期和成本，App开发完成后只需要经过较为简单的移植工作，就能轻松实现在不同平台上应用。</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="images/idxtip3.png">
+						<span class="tiptit">CrossApp引擎性能怎么样？</span>
+						<p>CrossApp以C++作为开发语言，图形渲染基于OpenGL ES 2.0，语言与渲染效率高，可以使移动设备的GPU发挥到最佳效果。使用CrossApp开发的应用程序支持导出到各大主流移动平台，真正实现"一次编码，多处运行"的跨平台开发技术。</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="pagebg pagetxt t2 clr">
+		<div class="mcontent">
+			<div class="txts">
+				<h2>跨平台</h2>
+				<p>CrossApp暂时主要支持目前最主流的移动平台IOS和Android，后续更新版本将完善更多平台的支持。</p>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="pagebg clr">
+		<div class="mcontent">
+			<ul class="col-3">
+				<li>
+					<a href="javascript:;">
+						<img src="images/idxtip5.png">
+						<span class="tiptit">整合部分第三方库</span>
+						<p>CrossApp暂时主要支持目前最主流的移动平台IOS和Android，后续更新版本将完善更多平台的支持。</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="images/idxtip6.png">
+						<span class="tiptit">基于OpenGL ES 2.0</span>
+						<p>CrossApp暂时主要支持目前最主流的移动平台IOS和Android，后续更新版本将完善更多平台的支持。</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src="images/idxtip7.png">
+						<span class="tiptit">丰富的UI控件</span>
+						<p>CrossApp暂时主要支持目前最主流的移动平台IOS和Android，后续更新版本将完善更多平台的支持。</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="pagebg copyright">
+		<div class="mcontent">
+			<p>Copyright © 20014-2015 Croossapp 版权所有 crossapp 京ICP备11023195号-4</p>
+			<ul>
+				<li><a href="javascript:;">1</a></li>
+				<li><a href="javascript:;">2</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+
+	<div id="totop">
+		<div style="opacity: 0; display: block;" class="level-2"></div>
+		<div class="level-3"></div>
+	</div>
+
+
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/top.js"></script>
+	<script>
+		$(function(){
+			$("*").not($(".mobilemenu").find("*")).click(function(){
+				$(".menulist").fadeOut();
+				$(".mobilemenu").removeClass("cur");
+
+			})
+			$(".menutips").click(function(e){
+				e.stopPropagation();
+				if($(".mobilemenu").hasClass("cur")){
+					$(".mobilemenu").removeClass("cur");
+					$(".menulist").fadeOut();
+				}
+				else{
+					$(".mobilemenu").addClass("cur");
+					$(".menulist").fadeIn();
+				}
+			})
+		})
+
+	</script>
+</body>
+</html>
